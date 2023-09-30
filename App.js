@@ -7,6 +7,7 @@ import SettingsScreen from "./Screens/SettingsScreen";
 //import EventsScreen from './Screens/EventsScreen';
 import ContactsScreen from './Screens/ContactsScreen';
 import EventsStack from './Screens/EventsScreen';
+import HomeStack from './Screens/HomeScreen';
 import { FontAwesome } from '@expo/vector-icons';
 
 
@@ -41,7 +42,7 @@ export default function App() {
                tabBarInactiveTintColor: "gray",
               })}
        >
-        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Home" options={{headerShown:false}} component={HomeStack} />
         <Tab.Screen name="Events" options={{headerShown:false}} component={EventsStack} />
         <Tab.Screen name="Contacts" component={ContactsScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />

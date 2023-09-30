@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Text, View, StyleSheet, Button,Pressable} from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
+import { Card } from 'react-native-paper';
 
 function EventsScreen({ navigation }) {
   return (
